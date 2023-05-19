@@ -4036,7 +4036,7 @@ section.side-flowers{
 	li{
 		display:inline-block;
 		position:relative;
-		width:380px;
+		width:unset;
 		height:380px;
 		overflow:hidden;
 		padding:0;
@@ -6181,7 +6181,7 @@ textarea.form-control{
 	.gallery-scroller{
 		li{
 			height:250px;
-			width:250px;
+			width:unset;
 		}
 
 		&.thumbs-lg li{

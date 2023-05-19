@@ -3872,7 +3872,7 @@ section.side-flowers {
 .gallery-scroller li {
   display: inline-block;
   position: relative;
-  /* width: 380px; */
+  width: unset;
   height: 380px;
   overflow: hidden;
   padding: 0;

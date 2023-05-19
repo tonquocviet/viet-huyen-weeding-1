@@ -37,9 +37,9 @@
 /* #Playfair Display Font
 ================================================== */
 @font-face {
-    font-family: 'Playfair Display';
-    src: url('../webfonts/playfairdisplay-regular.woff2') format('woff2'),
-         url('../webfonts/playfairdisplay-regular.woff') format('woff');
+	font-family: 'Playfair Display';
+    // src: url('../webfonts/2/AnyConv.com__PlayfairDisplay-Medium.woff2') format('woff2'),
+    //      url('../webfonts/2/PlayfairDisplay-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -54,7 +54,7 @@ $sat-color: saturate($color, 6%);
 $color-overlay: darken($color, 33%);
 $section-bg-color: #f9f9f9;
 
-$font-family: 'Poppins', sans-serif;
+$font-family: 'Quicksand', sans-serif;
 $highlight-ff: 'Playfair Display', serif;
 
 $pattern: url('../images/neela-pattern.png');
@@ -148,7 +148,7 @@ $pattern: url('../images/neela-pattern.png');
 
 #bridesmaids,
 #bmiadsgmen{
-	@include background-image-retina("https://via.placeholder.com/1920x1080", 'png');
+	// @include background-image-retina("https://via.placeholder.com/1920x1080", 'png');
 }
 
 #groomsmen{
@@ -3618,25 +3618,25 @@ p.center{
 ================================================== */
 .bmaid-gmen,
 .bmaid-gmen-color{
-	.image{
-		border:none;
-		@include box-shadow(none);
+	// .image{
+	// 	border:none;
+	// 	@include box-shadow(none);
 
-		.hover-info{
-			border: 35px solid transparent;
+	// 	// .hover-info{
+	// 	// 	border: 35px solid transparent;
 
-			.content{
-				height:auto;
-				top:50%;
-				@include transform(translateY(-50%));
-			}
+	// 	// 	.content{
+	// 	// 		height:auto;
+	// 	// 		top:50%;
+	// 	// 		@include transform(translateY(-50%));
+	// 	// 	}
 
-			h3 small{
-				font-size:12pt;
-				margin-top: 8px;
-			}
-		}
-	}
+	// 	// 	h3 small{
+	// 	// 		font-size:12pt;
+	// 	// 		margin-top: 8px;
+	// 	// 	}
+	// 	// }
+	// }
 }
 
 .bmaid-gmen-color{

@@ -34,7 +34,8 @@
 ================================================== */
 @font-face {
   font-family: "Playfair Display";
-  src: url("../webfonts/playfairdisplay-regular.woff2") format("woff2"), url("../webfonts/playfairdisplay-regular.woff") format("woff");
+  /* src: url("../webfonts/2/AnyConv.com__PlayfairDisplay-Medium.woff2") format("woff2"),
+        url("../webfonts/2/PlayfairDisplay-Medium.woff") format("woff"); */
   font-weight: normal;
   font-style: normal;
 }
@@ -66,26 +67,26 @@
 /* #Sections with background image
 ================================================== */
 #our-story-title {
-  background-image: url("https://via.placeholder.com/1920x1080.png");
+  background-image: url("../images/wedding_img//IMG_3804.JPG");
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   #our-story-title {
-    background-image: url("https://via.placeholder.com/1920x1080@2x.png");
+    background-image: url("../images/wedding_img//IMG_3802.JPG");
   }
 }
 
 #the-wedding {
-  background-image: url("https://via.placeholder.com/1920x1080.png");
+  background-image: url("../images/wedding_img//IMG_3800.JPG");
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   #the-wedding {
-    background-image: url("https://via.placeholder.com/1920x1080@2x.png");
+    background-image: url("../images/wedding_img//IMG_3800.JPG");
   }
 }
 
 #bridesmaids,
 #bmiadsgmen {
-  background-image: url("https://via.placeholder.com/1920x1080.png");
+  /* background-image: url("https://via.placeholder.com/1920x1080.png"); */
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   #bridesmaids,
@@ -189,7 +190,7 @@ body {
   overflow: hidden;
   line-height: 1.6;
   background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 15px;
 }
 
@@ -235,7 +236,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 #preloader {
@@ -1863,7 +1864,7 @@ p.center {
 .hero-subtitle {
   color: #8eaeba;
   font-size: 16pt;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-style: italic;
   font-weight: 300;
 }
@@ -2168,7 +2169,7 @@ p.center {
 .element .image .hover-info h3 small {
   display: block;
   font-size: 12pt;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   margin-top: 6px;
@@ -2192,6 +2193,10 @@ p.center {
 .element .image:hover img {
   webkit-filter: blur(4px) grayscale(80%) brightness(1.4);
   filter: blur(4px) grayscale(80%) brightness(1.4);
+}
+.bmaid-gmen .image:hover img {
+  webkit-filter: unset;
+  filter: unset;
 }
 
 .divider-about-us {
@@ -2387,7 +2392,7 @@ p.center {
 .element-v2 .info h3 small {
   display: block;
   font-size: 14pt;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   font-style: italic;
@@ -3149,7 +3154,7 @@ p.center {
   margin-bottom: 50px;
 }
 .map-info-container::before {
-  content: "";
+  /* content: "";
   width: 1px;
   height: calc(100% + 59px);
   position: absolute;
@@ -3157,7 +3162,7 @@ p.center {
   left: 50%;
   margin-left: -1px;
   background: #8eaeba;
-  clear: both;
+  clear: both; */
 }
 .map-info-container .info-wrapper {
   grid-column: 1/span 9;
@@ -3225,7 +3230,7 @@ p.center {
 }
 .map-info-container .info-wrapper .location-info h5 {
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 15pt;
 }
 .map-info-container .info-wrapper .location-info .info-map-divider {
@@ -3275,6 +3280,17 @@ p.center {
   border: 15px solid #fff;
   background: #fff;
 }
+
+#map_canvas .map-container-frame {
+  width: 100%;
+  height: 100%;
+}
+
+#map_canvas iframe {
+  width: 100%;
+  height: 100%;
+}
+
 #map_canvas img {
   max-width: none;
 }
@@ -3408,7 +3424,7 @@ p.center {
   margin-bottom: 38px;
 }
 .wedding-details h4 small {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 11pt;
   display: block;
   margin-top: 6px;
@@ -3465,45 +3481,10 @@ p.center {
 ================================================== */
 .bmaid-gmen .image,
 .bmaid-gmen-color .image {
-  border: none;
+  /* border: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
-  box-shadow: none;
-}
-.bmaid-gmen .image .hover-info,
-.bmaid-gmen-color .image .hover-info {
-  border: 35px solid transparent;
-}
-.bmaid-gmen .image .hover-info .content,
-.bmaid-gmen-color .image .hover-info .content {
-  height: auto;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.bmaid-gmen .image .hover-info h3 small,
-.bmaid-gmen-color .image .hover-info h3 small {
-  font-size: 12pt;
-  margin-top: 8px;
-}
-
-.bmaid-gmen-color .image .hover-info {
-  background-color: #8eaeba;
-}
-.bmaid-gmen-color .image .hover-info .h-lines {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
-}
-.bmaid-gmen-color .image .hover-info .v-lines {
-  border-left-color: #fff;
-  border-right-color: #fff;
-}
-.bmaid-gmen-color .image .hover-info h3,
-.bmaid-gmen-color .image .hover-info .sn-icons a {
-  color: #fff;
+  box-shadow: none; */
 }
 
 /* #Testimonials
@@ -3625,7 +3606,7 @@ section.side-flowers {
 .testimonials .owl-item .item .author h3 small {
   position: relative;
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 11pt;
   font-style: italic;
   margin-top: 32px;
@@ -3872,12 +3853,17 @@ section.side-flowers {
 
 .gallery-scroller {
   width: 100%;
-  overflow: hidden;
+  overflow: scroll !important;
   white-space: nowrap;
   margin-top: 30px;
   position: relative;
   bottom: -5px;
 }
+
+.gallery-scroller::-webkit-scrollbar {
+  display: none;
+}
+
 .gallery-scroller ul {
   list-style: none;
   padding: 0;
@@ -3886,11 +3872,11 @@ section.side-flowers {
 .gallery-scroller li {
   display: inline-block;
   position: relative;
-  width: 380px;
+  /* width: 380px; */
   height: 380px;
   overflow: hidden;
   padding: 0;
-  margin: -5px -3px 0 0;
+  /* margin: -5px -3px 0 0; */
   background-color: #8eaeba;
 }
 .gallery-scroller li img {
@@ -3950,6 +3936,93 @@ section.side-flowers {
   height: 480px;
 }
 
+ /* horizon gallery */
+ .gallery-horizal {
+  width: 100%;
+  overflow: scroll !important;
+  white-space: nowrap;
+  margin-top: 30px;
+  position: relative;
+  bottom: -5px;
+  outline: none;
+  cursor: -webkit-grab;
+}
+.gallery-horizal::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-horizal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.gallery-horizal li {
+  display: inline-block;
+  position: relative;
+  /* width: 380px; */
+  height: 380px;
+  overflow: hidden;
+  padding: 0;
+  /* margin: -5px -3px 0 0; */
+  background-color: #8eaeba;
+}
+.gallery-horizal li img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.gallery-horizal li:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.gallery-horizal li .hover-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(86, 125, 140, 0.7);
+  z-index: 1;
+  text-align: center;
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.gallery-horizal li .hover-info > a {
+  position: relative;
+  top: 25%;
+  -webkit-transform: translateY(-87%);
+  -moz-transform: translateY(-87%);
+  -ms-transform: translateY(-87%);
+  -o-transform: translateY(-87%);
+  transform: translateY(-87%);
+}
+.gallery-horizal li:hover .hover-info {
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.gallery-horizal li:hover .hover-info > a {
+  top: 50%;
+}
+.gallery-horizal li img,
+.gallery-horizal li .hover-info,
+.gallery-horizal li .hover-info > a {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.gallery-horizal.thumbs-lg li {
+  width: 480px;
+  height: 480px;
+}
+ /* horizon gallery */
 .gallery .item {
   position: relative;
   overflow: hidden;
@@ -4903,7 +4976,7 @@ section.side-flowers {
   color: #8eaeba;
 }
 .widget-latest-posts > ul h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16pt;
   display: inline-block;
   margin-bottom: 15px;
@@ -5783,10 +5856,7 @@ textarea.form-control {
     border-right: none;
   }
 
-  .bmaid-gmen .image .hover-info h3,
-.bmaid-gmen-color .image .hover-info h3 {
-    font-size: 20pt;
-  }
+
 
   .side-flowers-light::before {
     left: -145px;
@@ -5996,7 +6066,10 @@ textarea.form-control {
 
   .gallery-scroller li {
     height: 250px;
-    width: 250px;
+    /* width: 250px; */
+  }
+  .gallery-horizal li {
+    height: unset;
   }
   .gallery-scroller.thumbs-lg li {
     height: 320px;
@@ -6210,20 +6283,6 @@ textarea.form-control {
     margin-top: 15%;
   }
 
-  .bmaid-gmen .image .hover-info .content,
-.bmaid-gmen-color .image .hover-info .content {
-    padding: 10px;
-  }
-  .bmaid-gmen .image .hover-info h3,
-.bmaid-gmen-color .image .hover-info h3 {
-    font-size: 18pt;
-    margin-bottom: 5px;
-  }
-  .bmaid-gmen .image .hover-info h3 small,
-.bmaid-gmen-color .image .hover-info h3 small {
-    font-size: 10pt;
-  }
-
   .countdown > div > div {
     font-size: 30pt;
   }
@@ -6348,19 +6407,6 @@ textarea.form-control {
     border-width: 60px 0 0 100vw;
   }
 
-  .bmaid-gmen .image .hover-info .content,
-.bmaid-gmen-color .image .hover-info .content {
-    padding: 30px;
-  }
-  .bmaid-gmen .image .hover-info h3,
-.bmaid-gmen-color .image .hover-info h3 {
-    font-size: 32pt;
-    margin-bottom: 35px;
-  }
-  .bmaid-gmen .image .hover-info h3 small,
-.bmaid-gmen-color .image .hover-info h3 small {
-    font-size: 12pt;
-  }
 
   .side-flowers-light::before {
     left: -200px;

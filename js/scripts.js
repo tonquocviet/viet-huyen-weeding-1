@@ -445,9 +445,9 @@ var Neela;
             var stViewCtrlPos;
             var fullscreenCtrlPos;
 
-            if ($(".gmap").length === 0 || $_self.mapMarkers === "undefined" || $_self.mapMarkers.length === 0 || window.google === undefined) {
-                return false;
-            }
+            // if ($(".gmap").length === 0 || $_self.mapMarkers === "undefined" || $_self.mapMarkers.length === 0 || window.google === undefined) {
+            //     return false;
+            // }
 
             if (!(/^\d|\.|-$/.test($_self.mapInitialLatitude)) || !(/^\d|\.|-$/.test($_self.mapInitialLongitude))) {
                 $_self.mapInitialLatitude = $_self.mapMarkers[0].latitude;
@@ -655,6 +655,7 @@ var Neela;
         createGallery: function () {
 
             var $gallery = $(".gallery-scroller");
+            var $galleryHorizontal = $(".gallery-horizal");
             var scrolling = false;
 
             if ($(".gallery-scroller").length) {
@@ -683,6 +684,43 @@ var Neela;
 
                 $(document).ready(function () {
                     $(".gallery-scroller").niceScroll({
+                        cursorcolor: "#fff",
+                        cursorwidth: "0px",
+                        background: "#fff",
+                        cursorborder: "0px solid #1F2326",
+                        zindex: "999",
+                        autohidemode: false,
+                        enablemousewheel: false,
+                        touchbehavior: true
+                    });
+                });
+            }
+            if ($(".gallery-horizal").length) {
+
+                $(".gallery-right").on("click", function () {
+                    if (scrolling) {
+                        return false;
+                    }
+
+                    scrolling = true;
+                    $galleryHorizontal.animate({scrollLeft: $galleryHorizontal.scrollLeft() + 380}, function () {
+                        scrolling = false;
+                    });
+                });
+
+                $(".gallery-left").on("click", function () {
+                    if (scrolling) {
+                        return false;
+                    }
+
+                    scrolling = true;
+                    $galleryHorizontal.animate({scrollLeft: $galleryHorizontal.scrollLeft() - 380}, function () {
+                        scrolling = false;
+                    });
+                });
+
+                $(document).ready(function () {
+                    $(".gallery-horizal").niceScroll({
                         cursorcolor: "#fff",
                         cursorwidth: "0px",
                         background: "#fff",
@@ -1043,11 +1081,11 @@ var Neela;
             });
 
             //Slide map info on mouseenter map_canvas
-            $("#map_canvas").on("mouseenter", function () {
-                $(".location-info").addClass("open");
-            }).on("mouseleave", function () {
-                $(".location-info").removeClass("open");
-            });
+            // $("#map_canvas").on("mouseenter", function () {
+            //     $(".location-info").addClass("open");
+            // }).on("mouseleave", function () {
+            //     $(".location-info").removeClass("open");
+            // });
 
             // Scroll effect of navigation logo and .scrollto buttons
             $(".nav-logo, .scrollto").on("click", function (event) {

@@ -6066,7 +6066,7 @@ textarea.form-control {
 
   .gallery-scroller li {
     height: 250px;
-    width: unset !important;
+    width: 185px !important;
   }
   .gallery-horizal li {
     height: unset;
